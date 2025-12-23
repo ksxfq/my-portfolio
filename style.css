@@ -1,0 +1,50 @@
+/* 1. Сброс отступов и настройка высоты */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%; /* Нужно для прижатия футера */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column; /* Располагаем элементы вертикально */
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* 2. Шапка (Header) */
+    header {
+        background: #35424a;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* 3. Основной контент (Main) */
+    main {
+        flex: 1; /* Растягивается, занимая всё свободное место */
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto; /* Центрирование по горизонтали */
+        background: white;
+    }
+
+    /* 4. Футер (Footer) */
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 20px;
+    }
+
+    footer a {
+        color: #e8491d;
+        text-decoration: none;
+    }
